@@ -2,7 +2,10 @@
 // La funcion o metodo main es lo que se necesita llamar, la funcion main no regresa nada
 // Cupertino esta estilisado para ios, es un paquete que contiene todos los widgets o muchos widgets que existen en material , pero estan estilisados para la parte de cupertino es decir para IOS
 // maetial es el mas completo contenedor de widget
+// Las importaciones de materio o flutter van arriba de cualquier otra importacion, luego paquetes de terceros y al ultimo paquetes propias de la app
 import 'package:flutter/material.dart';
+
+import 'package:conum_app/screens/home_screen.dart';
 
 void main() {
   // dentro de main se corre la app de flutter
@@ -25,10 +28,8 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       // el widget home es un forma de trabajar y nos pide nuestro widget que queremos mostrar aqui
       // Center es otro widget de material que pone en el centro el contenido del child
-      home: Center(
-        // Text es otro widget
-        child: Text('Hola Mundo'),
-      )
+      debugShowCheckedModeBanner: false,
+      home: HomeScreen()
     );
   }
 
