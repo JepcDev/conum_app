@@ -9,6 +9,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const fontSize30 = TextStyle( fontSize: 30);
     // Es algo que mantiene la referencia de toda la aplicasion hasta este punto
     // Sirve para saber en que o cual es el contexto en el cual nuestro widget esta siendo construido
     // El buildContext es el arbol de todos los widgets y sabe donde se lo es solicitado, usado, instanciado cada widget
@@ -28,7 +29,7 @@ class HomeScreen extends StatelessWidget {
 
       ),
       // body es el cuerpo de la vista
-      // El center alinea la columna o bien a cualquier widget que contenga 
+      // El center alinea la columna o bien a cualquier widget que contenga
       body: Center(
         child: Column(
           // Es el alineamiento principal, si es una columna el alineamiento es vertical y si es un row el alineamiento es horizontal.
@@ -39,8 +40,8 @@ class HomeScreen extends StatelessWidget {
           // Todo lo que esta dentro de la lista tiene que ser un widget
           children: const <Widget>[
             // Text es otro widget
-            Text('Numero de clicks'),
-            Text('10'),
+            Text('Numero de clicks', style: fontSize30),
+            Text('10', style: fontSize30),
           ],
         ),
         ),
