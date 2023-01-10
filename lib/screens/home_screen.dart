@@ -5,11 +5,15 @@ import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
   // sirve para hacer referencia al widget
+  // un getor de estado es un objeto que maneja mi estado
   const HomeScreen({super.key});
+  // Si declaramos una variable seria una propiedad de la clase
 
   @override
   Widget build(BuildContext context) {
+    // si declaramos una variable aqui seria reconocida como tal.
     const fontSize30 = TextStyle( fontSize: 30);
+    int counter = 0;
     // Es algo que mantiene la referencia de toda la aplicasion hasta este punto
     // Sirve para saber en que o cual es el contexto en el cual nuestro widget esta siendo construido
     // El buildContext es el arbol de todos los widgets y sabe donde se lo es solicitado, usado, instanciado cada widget
@@ -38,10 +42,11 @@ class HomeScreen extends StatelessWidget {
           // se podria tomar como el alineamiento secundario de los children
           // crossAxisAlignment: CrossAxisAlignment.center,
           // Todo lo que esta dentro de la lista tiene que ser un widget
-          children: const <Widget>[
+          children: <Widget>[
             // Text es otro widget
             Text('Numero de clicks', style: fontSize30),
-            Text('10', style: fontSize30),
+            // para obtener o poder elejir entre las propiedad de la varia se la encierra entre llaves ${counter}
+            Text('$counter', style: fontSize30),
           ],
         ),
       ),
