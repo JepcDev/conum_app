@@ -48,6 +48,7 @@ class HomeScreen extends StatelessWidget {
       // las constantes van mas abajo del momento de ejecusion
       // las constantes van siempre al momento de la creacion de la app
       // Icon es un widget especializado para mostrar iconos
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
         onPressed: (){
