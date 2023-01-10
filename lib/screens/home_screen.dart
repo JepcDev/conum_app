@@ -1,8 +1,7 @@
 
-
-
 import 'package:flutter/material.dart';
 
+// El problema es que el statelesWidget no se redibuja y poreso no ve reflejado los cambios en la pantalla
 class HomeScreen extends StatelessWidget {
   // sirve para hacer referencia al widget
   // un getor de estado es un objeto que maneja mi estado
@@ -14,7 +13,7 @@ class HomeScreen extends StatelessWidget {
     // si declaramos una variable aqui seria reconocida como tal.
     const fontSize30 = TextStyle( fontSize: 30);
     int counter = 0;
-    // Es algo que mantiene la referencia de toda la aplicasion hasta este punto
+    // BuildContext Es algo que mantiene la referencia de toda la aplicasion hasta este punto
     // Sirve para saber en que o cual es el contexto en el cual nuestro widget esta siendo construido
     // El buildContext es el arbol de todos los widgets y sabe donde se lo es solicitado, usado, instanciado cada widget
 
