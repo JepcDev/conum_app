@@ -43,7 +43,7 @@ class HomeScreen extends StatelessWidget {
           // Todo lo que esta dentro de la lista tiene que ser un widget
           children: <Widget>[
             // Text es otro widget
-            Text('Numero de clicks', style: fontSize30),
+            const Text('Numero de clicks', style: fontSize30),
             // para obtener o poder elejir entre las propiedad de la varia se la encierra entre llaves ${counter}
             Text('$counter', style: fontSize30),
           ],
